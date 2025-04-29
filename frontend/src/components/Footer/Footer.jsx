@@ -17,7 +17,7 @@ const Footer = () => {
           </div>  
           <p>Contact us:</p>  
           <p>📍 123 ouislane , 50000 Morocco</p>  
-          <p>📞 +33 1 23 45 67 89</p>  
+          <p>📞 +0606060606</p>  
           <p>📧 contact@automaison.com</p>  
         </div>  
 
