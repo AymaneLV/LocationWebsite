@@ -1,0 +1,37 @@
+.review-card {  
+    background: var(--light-bg);  
+    padding: 1rem;  
+    border-radius: 8px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    margin: 1rem 0;  
+  }  
+  
+  .review-header {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    margin-bottom: 0.5rem;  
+  }  
+  
+
+.rating {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.star {
+  font-size: 1.2rem;
+}
+
+.star.filled {
+  color: #FFD700; /* Gold/yellow for filled stars */
+}
+
+.star.empty {
+  color: #E0E0E0; /* Light gray for empty stars */
+}
+
+/* Optional: Add orange variation */
+.star.filled.orange {
+  color: #FFA500; /* Orange color */
+}

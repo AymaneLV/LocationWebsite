@@ -1,0 +1,42 @@
+/* Fade In */  
+@keyframes fadeIn {  
+    from {  
+      opacity: 0;  
+    }  
+    to {  
+      opacity: 1;  
+    }  
+  }  
+  
+  .fade-in {  
+    animation: fadeIn 0.5s ease-out;  
+  }  
+  
+  /* Button Hover */  
+  .btn-hover {  
+    transition: transform 0.2s ease, box-shadow 0.2s ease;  
+  }  
+  
+  .btn-hover:hover {  
+    transform: translateY(-2px);  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  }  
+  
+  /* Modal Slide */  
+  @keyframes slideUp {  
+    from {  
+      transform: translateY(100%);  
+    }  
+    to {  
+      transform: translateY(0);  
+    }  
+  }  
+  
+  .modal-content {  
+    animation: slideUp 0.3s ease-out;  
+  }  
+  
+  /* Smooth Scroll */  
+  html {  
+    scroll-behavior: smooth;  
+  }  

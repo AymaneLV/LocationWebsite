@@ -1,0 +1,211 @@
+/* Navbar Wrapper */
+.navbar-wrapper {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
+  background-color: var(--light-bg); 
+}
+
+/* Navbar Base */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.04rem 0.5rem; 
+  background-color: var(--light-bg);
+  color: var(--text-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; 
+  transition: all 0.3s ease;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2rem; /* Reduced font size */
+}
+
+.logo-auto {
+  color: var(--logo-auto);
+}
+
+.logo-maison {
+  color: var(--logo-maison);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 1rem; /* Reduced gap */
+  justify-content: center !important;
+  flex: 1;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem; /* Reduced font size */
+  transition: all 0.3s ease;
+  padding: 0.3rem 0; /* Reduced padding */
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Right Side Actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Reduced gap */
+}
+
+/* Theme, Language, Currency Selectors */
+.theme-toggle,
+.lang-currency select {
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem; /* Reduced padding */
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.8rem; /* Reduced font size */
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover,
+.lang-currency select:hover {
+  color: var(--primary);
+  transform: scale(1.05);
+}
+
+/* Login Button */
+.auth-btn {
+  background-color: #00ff6a;
+  color: white;
+  padding: 0.3rem 1rem; /* Reduced padding */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.8rem; /* Reduced font size */
+  transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #00d36b;
+  box-shadow: 0 0 15px rgba(9, 255, 0, 0.8); /* Reduced shadow intensity */
+  transform: translateY(-2px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--mobile-menu-bg);
+  padding: 0.5rem 1rem; /* Reduced padding */
+  gap: 0.5rem; /* Reduced gap */
+  border-radius: 0 0 8px 8px; /* Reduced border radius */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu a,
+.mobile-menu button {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0;
+  font-size: 0.9rem; /* Reduced font size */
+}
+
+.mobile-menu a:hover,
+.mobile-menu button:hover {
+  color: var(--primary);
+}
+
+/* Mobile Toggle Icon */
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem; /* Reduced icon size */
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.mobile-toggle:hover {
+  color: var(--primary);
+}
+
+/* Dark Mode Variables */
+:root {
+  --primary: #7bff00;
+  --light-bg: #ffffff;
+  --dark-bg: #1a1a1a;
+  --text-color: #000000;
+  --dark-text: #ffffff;
+  --logo-auto: #000000;
+  --logo-maison: #3cff00;
+  --border-color: #e0e0e0;
+  --mobile-menu-bg: #f5f5f5;
+}
+
+/* Dark Mode Styling */
+[data-theme="dark"] {
+  --light-bg: #1a1a1a;
+  --text-color: #ffffff;
+  --logo-auto: #ffffff;
+  --border-color: #333333;
+  --mobile-menu-bg: #333333;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0.5rem 1rem; /* Reduced padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links,
+  .nav-actions {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .navbar {
+    padding: 0.5rem 1rem; /* Reduced padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-wrapper {
+    padding: 0.5rem 1rem; /* Reduced padding */
+  }
+
+  .logo {
+    font-size: 1rem; /* Reduced font size */
+  }
+}

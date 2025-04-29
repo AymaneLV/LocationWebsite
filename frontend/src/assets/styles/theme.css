@@ -1,0 +1,43 @@
+:root {  
+    /* Primary Color */  
+    --primary: #00e676;  
+    --primary-hover: #00c853;  
+  
+    /* Light Mode */  
+    --light-bg: #ffffff;  
+    --light-bg-secondary: #f5f5f5;  
+    --text-color: #000000;  
+  
+    /* Dark Mode */  
+    --dark-bg: #1a1a1a;  
+    --dark-bg-secondary: #2d2d2d;  
+    --dark-text: #ffffff;  
+  
+    /* Common */  
+    --border-color: #e0e0e0;  
+    --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  }  
+  
+  [data-theme="dark"] {  
+    --light-bg: #1a1a1a;  
+    --light-bg-secondary: #2d2d2d;  
+    --text-color: #ffffff;  
+    --border-color: #333333;  
+  }  
+  
+  /* Logo Colors */  
+  :root .logo-auto {  
+    color: #000000;  
+  }  
+  
+  [data-theme="dark"] .logo-auto {  
+    color: #ffffff;  
+  }  
+  
+  .logo-maison {  
+    color: var(--primary);  
+  }  
+
+  [data-theme="dark"] .banner-content {  
+    --text-color: #000000  
+  }  
